@@ -4,10 +4,10 @@ window.addEventListener("DOMContentLoaded", () => {
     .then(data =>{
         document.getElementById("header").innerHTML = data;
 
-        const hambuger = document.getElementById("hamburger");
-        const navMenu = document.getElementsById("nav-menu");
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("nav-menu");
 
-        hambuger.addEventListener("click" , () =>{
+        hamburger.addEventListener("click" , () =>{
         navMenu.classList.toggle("active");  
     });
 });
