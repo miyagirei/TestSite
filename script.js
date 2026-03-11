@@ -1,1 +1,7 @@
-console.log("サイトを読み込む完了!");
+window.addEventListener("DOMContentLoaded", () => {
+    fetch("header.html")
+    .then(response => response.text())
+    .then(data =>{
+        document.getElementById("header").innerHTML = data;
+    });
+});
