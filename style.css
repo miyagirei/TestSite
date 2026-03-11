@@ -5,6 +5,11 @@
         text-align: center;
 }
 
+body{
+    margin:0;
+    padding-top: 60px;
+}
+
 .navbar{
     position: fixed;
     top:0;
@@ -66,6 +71,7 @@
     text-align: left;
     padding-left: 200px;
     position: relative;
+    min-height: 60vh;
     clip-path: polygon(0 0, 100% 0, 100% 85%,0 100%);
 }
 
@@ -180,6 +186,140 @@
     margin-top: 80px;
 }
 
+.greeting{
+    background:white;
+    border-radius:12px;
+    box-shadow: 0px -5px 2px rgba(0,0,0,0.5);
+    padding:40px;
+    
+    display:flex;
+    gap:50px;
+
+    max-width:1200px;
+    margin:0 auto;
+    margin-top: 5%;
+    min-height: 50vh;
+}
+
+.greeting-left{
+    width: 500px;
+    border-radius: 10px;
+}
+
+.representative-img{
+
+        width:100%;
+    border-radius:10px;
+}
+
+.presenter-name{
+    font-size: 25px;
+}
+
+.person-title{
+    font-size: 20px;
+}
+
+.greeting-right{
+    flex:1;
+    text-align:left;
+}
+
+.greeting-title{
+    font-size:30px;
+    border-bottom:3px solid #e95c2b;
+    padding-bottom:10px;
+    margin-bottom:20px;
+}
+
+.sign{
+    text-align:right;
+}
+
+.tornament-purpose{
+    background:white;
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        max-width:1200px;
+    margin:0 auto;
+    margin-bottom:40px;
+    
+}
+
+.purpose-title{
+    
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#e65500;
+}
+
+.purpose-title i{
+    font-size:20px;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+        max-width:1200px;
+    margin:0 auto;
+    padding: 30px;
+}
+
+.info-card{
+    background:white;
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.info-card h3{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.info-card i{
+    color:#e65500;
+}
+
+.date{
+    font-weight:bold;
+}
+
+.note{
+    font-size:12px;
+    color:#666;
+}
+
+.info-other{
+    background:white;
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    max-width:1200px;
+    margin:0 auto;
+    margin-bottom:40px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    
+}
+
+.other-card{
+
+    max-width: 500px;
+}
+
+.other-card h3{
+    align-items:center;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+
 @media (max-width:768px){
 
 .catch{
@@ -235,4 +375,17 @@
 .hamburger{
     display: flex;
 }
+
+.greeting{
+    flex-direction: column;
+}
+
+.greeting-left{
+    width: 100%;
+}
+
+.info-grid{
+grid-template-columns:1fr;
+}
+
 }
