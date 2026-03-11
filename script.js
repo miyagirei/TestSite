@@ -3,12 +3,14 @@ window.addEventListener("DOMContentLoaded", () => {
     .then(response => response.text())
     .then(data =>{
         document.getElementById("header").innerHTML = data;
+
+        const hambuger = document.getElementById("hamburger");
+        const navMenu = document.getElementsById("nav-menu");
+
+        hambuger.addEventListener("click" , () =>{
+        navMenu.classList.toggle("active");  
     });
 });
 
-const hambuger = document.getElementById("hamburger");
-const navMenu = document.getElementsById("nav-menu");
 
-hambuger.addEventListener("click" , () =>{
-  navMenu.classList.toggle("active");  
 });
