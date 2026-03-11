@@ -1,7 +1,8 @@
-main {
-    font-family: sans-serif;
-    background: white;
-    text-align: center;
+
+    main {
+        font-family: sans-serif;
+        background: white;
+        text-align: center;
 }
 
 .navbar{
@@ -41,8 +42,21 @@ main {
     font-size: 10px;
 }
 
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span{
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
 .catch{
-    height: 70vh;
+    
     background: url("images/baseball.jpg") center/cover no-repeat;
     color:white;
     display: flex;
@@ -124,7 +138,7 @@ main {
     position: relative;
     display: inline-block;
     overflow:visible;
-        transform: rotate(5deg);
+    transform: rotate(5deg);
     transition: transform 0.6s cubic-bezier(0.22,1,0.36,1);
     padding : 20px 0px;
 }
@@ -150,11 +164,75 @@ main {
     padding: 6px 10px;
     border-radius: 8px;
     border: black;
-
+    
 }
 
 .meeting-image-text-sub{
     font-size: 10px;
     padding: 2px;
     text-shadow: black;
+}
+
+.sub-page-title{
+    font-size: clamp(32px,6vw,40px);
+    left: 20%;
+    margin: 0;
+    margin-top: 80px;
+}
+
+@media (max-width:768px){
+
+.catch{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.catch-sub{
+    font-size:14px;
+}
+
+.meeting{
+    flex-direction:column;
+    gap:40px;
+    padding:40px 20px;
+}
+
+.meeting-text h1{
+    font-size:24px;
+}
+
+.meeting-image-card{
+    transform:none;
+}
+
+.meeting-image-card img{
+    width:100%;
+}
+
+.nav-menu{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #132038;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateY(-200%);
+    transition: 0.3s;
+}
+
+.nav-menu.active{
+    transform: translateY(0);
+}
+
+.nav-btn{
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hamburger{
+    display: flex;
+}
 }
