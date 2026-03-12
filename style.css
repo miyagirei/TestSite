@@ -361,11 +361,101 @@ text-align:center;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
+.tab-buttons{
+display:inline;
+gap:10px;
+margin-bottom:20px;
+
+}
+
+.tab-btn{
+padding:10px 20px;
+border:none;
+background:#ddd;
+cursor:pointer;
+border-radius:6px;
+
+}
+
+.tab-btn.active{
+background:#132038;
+color:white;
+}
+
+.tab-content{
+display:none;
+
+}
+
+.tab-content.active{
+display:block;
+}
+
+.schedule-card{
+    background:white;
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        max-width:1200px;
+    margin:0 auto;
+    margin-bottom:40px;
+    
+}
+
+.schedule-grid{
+    display: grid;
+    grid-template-columns:1fr;
+    gap:30px;
+    margin-top:40px;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.schedule-time-card{
+    padding:10px 20px;
+border:none;
+background:#ddd;
+cursor:pointer;
+border-radius:6px;
+text-align: left;
+font-size: 20px;
+}
+
+.schedule-infomation{
+    background:rgba(255, 153, 30, 0.5);
+    padding:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        max-width:1200px;
+    margin:0 auto;
+    margin-bottom:40px;
+text-align: left;
+font-size: 20px;
+}
+
+.rule-infomation{
+        background:white;
+    padding:30px;
+        border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        max-width:1200px;
+    margin:0 auto;
+    margin-bottom:40px;
+    text-align: left;
+}
+
+.rule-infomation p{
+font-size: 20px;
+}
+
+
 @media (max-width:768px){
 
 .catch{
     padding-left:20px;
     padding-right:20px;
+}
+.catch-title{
+    font-size: 28px;
 }
 
 .catch-sub{
@@ -418,15 +508,69 @@ box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
 .greeting{
-    flex-direction: column;
+    flex-direction:column;
+padding:25px;
+gap:30px;
 }
 
 .greeting-left{
     width: 100%;
 }
 
+.presenter-name{
+font-size:20px;
+}
+
+.person-title{
+font-size:16px;
+}
+
+.greeting-title{
+font-size:22px;
+}
+
 .info-grid{
 grid-template-columns:1fr;
+padding:20px;
+}
+
+.info-other{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.team-grid{
+grid-template-columns:1fr;
+}
+
+.team-card img{
+height:200px;
+}
+
+.tournament-format{
+grid-template-columns:1fr;
+}
+
+.schedule-time-card{
+font-size:16px;
+}
+
+.schedule-infomation{
+font-size:16px;
+padding:20px;
+}
+
+.rule-infomation p{
+font-size:16px;
+}
+
+.tab-buttons{
+display:flex;
+justify-content:center;
+}
+
+.tab-btn{
+flex:1;
 }
 
 }
