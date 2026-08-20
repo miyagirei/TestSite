@@ -314,7 +314,7 @@ body{
 }
 
 .other-card h3{
-    align-items:center;
+    align-items:left;
     gap:10px;
     margin-bottom:15px;
 }
